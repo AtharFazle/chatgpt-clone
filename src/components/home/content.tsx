@@ -43,7 +43,7 @@ export default function Content() {
 
   return (
     <div className="w-full h-screen flex flex-col items-center mx-auto ">
-      <div className="min-h-[60px] flex items-center justify-between  w-full px-10 md:px-5 mb-5">
+      <div className="min-h-[60px] flex items-center justify-between  w-full px-0 md:px-5 mb-5">
         <VersionPicker />
         <Button className="bg-white border hover:bg-accent" size={"icon"}>
           <Download className="text-black" size={20} />
