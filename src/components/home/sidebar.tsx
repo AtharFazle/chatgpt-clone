@@ -46,7 +46,7 @@ export default function Sidebar() {
         animate={open ? "open" : "closed"}
         className={clsx(
           "bg-black text-white px-5 max-h-screen py-4 overflow-y-auto text-sm",
-          "absolute left-0 md:relative"
+          "absolute left-0 md:relative z-50"
         )}
       >
         <div
@@ -126,7 +126,7 @@ export default function Sidebar() {
         </div>
         <Separator className="mt-48" />
         <div className="text-white flex flex-row items-center gap-2 mt-2 p-1 hover:bg-muted/30 cursor-pointer">
-          <Avatar>
+          <Avatar className="-z-10">
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
